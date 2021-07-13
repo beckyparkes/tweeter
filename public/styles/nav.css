@@ -1,6 +1,28 @@
 
 
-head {
+nav {
+  align-items: center;
+  display: flex;
+  height: 120px;
+  background-color: #4056A1;
+  color: #FFFFFF;
+
+}
+
+span {
+  font-size: 50px;
+  text-align: left;
+  margin-left: 1.5em;
   font-family: 'Bungee', cursive;
 }
 
+.header {
+  margin-left: auto;
+  margin-right: 1.5em;
+
+  /* display: flex;
+  justify-content: flex-end;
+   */
+  /* flex-wrap: wrap;
+  color: yellow; */
+}
