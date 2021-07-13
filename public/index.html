@@ -4,6 +4,17 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <!-- Bungee:       font-family: 'Bungee', cursive;      -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet"> 
+
+    <!-- Source Sans Pro:   font-family: 'Source Sans Pro', sans-serif;   -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,600;1,300;1,600&display=swap" rel="stylesheet"> 
+
+
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
 
@@ -24,6 +35,19 @@
     </nav>
 
     <!-- Page-specific (main) content here -->
-    <main class="container"></main>
+    <main class="container">
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+        <form>
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div>
+            <button type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+      </section>      
+    </main>
+
   </body>
 </html>
