@@ -1,23 +1,19 @@
-(function ($) {
+$(document).ready (function () {
+
+  // document.addEventListener('input',function(){
+  //     console.log("this");
+  // })
   $(() => {
     $("#tweet-text").on("input", onInput);
-  });
+  })
 
-let CHAR_LIM = 140;
-const OVER_LIM = 'You are over character limit';
-const WARNING = 'WARNING! You are approaching character limit';
+  let CHAR_LIM = 140;
+  const OVER_LIM = 'You are over character limit';
+  const WARNING = 'WARNING! You are approaching character limit';
 
-const onInput = function () {
+  const onInput = function () {
   const count = $("#tweet-text").val().length;
-
-  // console.log(`${$("#tweet-text").val()}`);
-
-  // }
-
-  // $('.counter').text('abc');
-
-  // $('.mix').html('abc');
-
+  console.log(this);
 
   const remaining = CHAR_LIM - count;
 
@@ -30,7 +26,7 @@ const onInput = function () {
   } else if (remaining < 0) {
     $counter.removeClass(WARNING).addClass(OVER_LIM);
   }
-  // $counter.toggleClass(OVER_LIM, remaining < 0);
+
 
   if (remaining <= 0) {
     $('.counter').addClass('fg_red');
@@ -39,4 +35,4 @@ const onInput = function () {
   }
   $counter.html(remaining);
 };
-}) (jQuery);
+}) 
