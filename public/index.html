@@ -41,8 +41,8 @@
     <!-- Top nav bar (fixed) -->
     
     <nav>
-      <span>tweeter</span>
-      <div class="header"><p sytle="font-weight: bolder">Write a new tweet</p><i class="fas fa-angle-double-down"></i></div>
+      <span class="title-name">tweeter</span>
+      <div class="header"><p><strong>Write</strong>&nbsp a new tweet</p><i class="fas fa-angle-double-down"></i></div>
     </nav>
 
     <header>
@@ -61,12 +61,14 @@
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label><br>
-          <textarea name="text" id="tweet-text"></textarea>
-          <div>
+          <div id='button-and-counter'>
             <button type="submit">Tweet</button>
-            <output name="counter" class="counter" for="tweet-text">140</output>
+              <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
+          <textarea name="text" id="tweet-text"></textarea>
+
         </form>
+        
         <article class='container'>
           <header id="article-header"><i style="float:left" class="fas fa-smile"></i>Rhoda Jacobs</header>
           <body>
@@ -76,7 +78,7 @@
             10 days ago
           </footer>
         </article>
-        
+
       </section>      
     </main>
 
