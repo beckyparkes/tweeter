@@ -48,13 +48,14 @@ output {
 
 article {
   background-color: #f4f1ec;
-  display: flexbox;
   border: 2px solid #545149;
   flex-direction: column;
   height: 200px;
   width: 50%;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap;
   justify-content: flex-start;
+  display: flexbox; */
+  position: relative;
 
 }
 
@@ -64,6 +65,22 @@ article {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
+
+  /* position: absolute;
+  top: 0; */
+  background-color: #f4f1ec;
+  border-bottom: 2px solid #545149;
+  height: 30px;
+  vertical-align: top;
+}
+
+#article-footer {
+  /* display: flex;
+  justify-content: space-between;
+  flex-direction: row; */
+
+  position: absolute;
+  bottom: 0;
   background-color: #f4f1ec;
   border-bottom: 2px solid #545149;
   height: 30px;
