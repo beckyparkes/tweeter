@@ -13,16 +13,16 @@ button {
   background-color: #4056A1;
   border: none;
   color: white;
-  height: 48px;
+  height: 44px;
   padding: 15px 32px;
   font-weight: bold;
   text-align: center;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Bungee', cursive;
+  margin-top: 10px;
 
 }
-
 output {
   /* float: right; */
   font-weight: bold;
@@ -36,12 +36,18 @@ output {
 
 #button-and-counter {
   display: flex;
+  flex-flow: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+  margin-top: 30px;
+  border-top: 2px solid #545149;
+
 }
 
 
+
 article {
+  background-color: #f4f1ec;
   display: flexbox;
   border: 2px solid #545149;
   flex-direction: column;
@@ -51,9 +57,19 @@ article {
   justify-content: flex-start;
 
 }
+
+
 /* New Container */
-article header {
+#article-header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #f4f1ec;
   border-bottom: 2px solid #545149;
   height: 30px;
   vertical-align: top;
+}
+
+#tweet-text {
+  margin-top: 5px;
 }
