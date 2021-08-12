@@ -87,10 +87,24 @@ article {
   width: 100%;
   font-size: 15px;
   /* padding-left: 0.2em; */
+}
+
+/* footer items hover attribute */
+.fa-flag:hover {
+  color: blue;
+}
+
+.fa-retweet:hover {
+  color: blue;
+
+}
+.fa-heart:hover {
+  color: blue;
 
 }
 
-#footer-emotes{
+
+#footer-emotes {
   float: right;
   padding-right: 0.3em;
 }
