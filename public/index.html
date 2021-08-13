@@ -90,19 +90,23 @@
 
       
     <main class="container">
+      
       <section class="new-tweet">
-        <form action="/tweets/" method="POST">
-          <label for="tweet-text">What are you humming about?</label><br>
-          <textarea name="text" id="tweet-text"></textarea>
+        
+        <form action="/tweets" method="POST">
+          <textarea name="text" placeholder="What are you humming about?" id="tweet-text"></textarea>
           <div id='button-and-counter'>
             <button type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-
         </form>
         
         <article class='container'>
-          <header id="article-header"><i style="float:left; margin: 0.2em" class="fas fa-smile"></i>&nbsp&nbsp Rhoda Jacobs</header>
+          <header id="article-header"><i style="float:left; margin: 0.2em" class="fas fa-smile"></i>
+            <div id="name">&nbsp&nbsp Rhoda Jacobs</div>
+            <div id="handle">@RhondaJacobsuWU</div>
+          
+          </header>
           <div id="article-body">Test Text</div>
           <footer id="article-footer" class="container">&nbsp 10 days ago
             <div id="footer-emotes">
@@ -112,6 +116,7 @@
         </article>
 
       </section>      
+    
     </main>
 
   </body>

@@ -17,7 +17,6 @@ $(document).ready(function() {
     });
   }
 
-  // disallow when certain conditions aren't met
 
 
   //action when submitting
@@ -25,7 +24,6 @@ $(document).ready(function() {
     event.preventDefault();
 
     let data = ($(event.target).serialize()); //taking data from the input field and turning it into a query string
-
     let inputText = $(event.target).children('textarea').val();
 
     if (inputText === '') {
@@ -45,7 +43,7 @@ $(document).ready(function() {
   });
 
 
-
+  // disallow when certain conditions aren't met
 
   $('.new-tweet form').submit((event) => {
     event.preventDefault();
@@ -105,7 +103,7 @@ $(document).ready(function() {
   // calls createTweetElement for each tweet
   // takes return value and appends it to the tweets container
 
-    tweetData.forEach((item) => {
+    tweets.forEach((item) => {
       return createTweetElement(item).appendTo('.tweets');
     })
   }
@@ -117,6 +115,20 @@ $(document).ready(function() {
 // the entire HTML structure of the tweet.the entire HTML structure of the tweet.
 
 const createTweetElement = function(tweet) { 
+  // takes in this object "tweet"
+//   {
+//     "user": {
+//       "name": "Newton",
+//       "avatars": "https://i.imgur.com/73hZDYK.png",
+//         "handle": "@SirIsaac"
+//       },
+//     "content": {
+//         "text": "If I have seen further it is by standing on the shoulders of giants"
+//       },
+//     "created_at": 1461116232227
+//  }
+
+
       let tweet = $('<article>').addClass('tweet');
       const header = $('<header>');
       const h2 = $('<h2>', {
