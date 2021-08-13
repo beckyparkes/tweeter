@@ -5,6 +5,10 @@
   }
 }
 
+#tweets-container {
+  z-index: 2;
+}
+
 /* textbox styling */
 textarea {
   font-size: 20px;
@@ -47,12 +51,12 @@ output {
   margin-top: 15px;
 }
 
-/* color to red when negative counter */
+/* counter color to red when negative counter */
 .fg_red {
   color: red;
 }
 
-
+/* tweet container styling */
 article {
   background-color: #f4f1ec;
   border: 2px solid #545149;
@@ -75,7 +79,7 @@ article:hover {
 }
 
 
-/* New Container */
+/* tweet header */
 #article-header {
   display: flex;
   justify-content: space-between;
@@ -93,38 +97,41 @@ article:hover {
 }
 
 #name {
+  font-weight: bold;
   font-size: 80%;
 }
 #handle {
-  font-size: 10px;
+  font-size: 50%;
   padding-right: 0.5em;
   font-weight: bold;
 }
 
 /* text */
 #article-body {
+  padding-top: 50px;
   vertical-align: middle;
   margin-left: 1em;
-  font-size: 30px;
-  height: 140px;
+  margin-right: 1em;
+  height: 160px;
 }
 
-#tweets-container {
-  z-index: 2;
-}
+
 #article-footer {
-  /* position: absolute; */
   bottom: 0;
   background-color: #f4f1ec;
   border-top: 2px solid #545149;
-  height: 30px;
+  height: 20px;
   vertical-align: top;
   width: 100%;
   font-size: 15px;
   font-weight: bold;
 }
+#footer-emotes {
+  float: right;
+  padding-right: 0.3em;
+}
 
-/* footer items hover attribute */
+/* footer items hover attributes */
 .fa-flag:hover {
   color: blue;
 }
@@ -138,9 +145,4 @@ article:hover {
 
 }
 
-
-#footer-emotes {
-  float: right;
-  padding-right: 0.3em;
-}
 
