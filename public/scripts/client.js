@@ -41,7 +41,7 @@ $(document).ready(function () {
     }
   });
 
-//loops through list and appends to text area
+  //loops through list and appends to text area
   const renderTweets = function (tweets) {
     tweets.forEach((item) => {
       return createTweetElement(item).prependTo('#tweets-container');
