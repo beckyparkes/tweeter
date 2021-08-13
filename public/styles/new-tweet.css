@@ -53,7 +53,7 @@ article {
   height: 200px;
   position: relative;
   width: 50%;
-
+  margin-top: 25px;
 }
 
 article:hover {
