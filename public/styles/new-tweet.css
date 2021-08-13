@@ -46,8 +46,6 @@ output {
 }
 
 
-
-
 article {
   background-color: #f4f1ec;
   border: 2px solid #545149;
@@ -86,7 +84,6 @@ article:hover {
 
 #article-body {
   vertical-align: middle;
-  margin-top: 20%;
   margin-left: 1em;
   font-size: 30px;
 }
