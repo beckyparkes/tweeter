@@ -1,3 +1,11 @@
+
+@media only screen and (min-width: 860px) {
+  .new-tweet {
+    margin-top: 100px;
+  }
+  
+}
+
 /* textbox styling */
 textarea {
   font-size: 20px;
@@ -51,10 +59,17 @@ article {
   border: 2px solid #545149;
   flex-direction: column;
   height: 200px;
-  position: relative;
+  /* position: relative; */
   width: 50%;
   margin-top: 25px;
 }
+
+@media only screen and (min-width: 860px) {
+  article {
+    width: 80%
+  }
+}
+
 
 article:hover {
   border: 1px solid #545149;
@@ -74,6 +89,7 @@ article:hover {
   height: 30px;
   vertical-align: top;
   float: left;
+  margin-left: 0;
 }
 #article-header img {
   height: 25px;
@@ -92,8 +108,11 @@ article:hover {
   height: 140px;
 }
 
+#tweets-container {
+  z-index: 2;
+}
 #article-footer {
-  position: absolute;
+  /* position: absolute; */
   bottom: 0;
   background-color: #f4f1ec;
   border-top: 2px solid #545149;
@@ -102,8 +121,6 @@ article:hover {
   width: 100%;
   font-size: 15px;
   font-weight: bold;
-
-  /* padding-left: 0.2em; */
 }
 
 /* footer items hover attribute */
