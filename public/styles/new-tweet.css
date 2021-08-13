@@ -75,17 +75,21 @@ article:hover {
   vertical-align: top;
   float: left;
 }
-
+#article-header img {
+  height: 25px;
+}
 #handle {
   font-size: 10px;
   padding-right: 0.5em;
   font-weight: bold;
 }
 
+/* text */
 #article-body {
   vertical-align: middle;
   margin-left: 1em;
   font-size: 30px;
+  height: 140px;
 }
 
 #article-footer {
