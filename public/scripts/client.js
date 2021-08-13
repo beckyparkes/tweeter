@@ -41,32 +41,32 @@ $(document).ready(function() {
   });
 
 
-  // // disallow when certain conditions aren't met
+  // disallow when certain conditions aren't met
 
-  // $('.new-tweet form').submit((event) => {
-  //   event.preventDefault();
-  //   const charLeft = Number($('.counter').text());
-  //   if (charLeft == 140) {
-  //     $('.popup-msg').text('Write something before submitting.').slideDown(function() {
-  //       setTimeout(function() {
-  //         $('.popup-msg').slideUp();
-  //       }, 5000);
-  //     });
-  //   } else if (charLeft < 0) {
-  //     $('.popup-msg').text('Oops, you wrote too much!').slideDown(function() {
-  //       setTimeout(function() {
-  //         $('.popup-msg').slideUp();
-  //       }, 5000);
-  //     });
-  //   } else {
-  //     $.ajax({
-  //       type: 'POST',
-  //       url: '/tweets',
-  //       data: $('.new-tweet form textarea').serialize(),
-  //       success: renderNewTweet
-  //     });
-  //   }
-  // });
+  $("#make-new-tweet").submit((event) => {
+    event.preventDefault();
+    const chars = Number($('.counter').text());
+    if (chars === 140) {
+      $('.popup-msg').text('Form cannot be empty.').slideDown(function() {
+        setTimeout(function() {
+          $('.popup-msg').slideUp();
+        }, 5000);
+      });
+    } else if (chars < 0) {
+      $('.popup-msg').text("Message must remain under 140 characters").slideDown(function() {
+        setTimeout(function() {
+          $('.popup-msg').slideUp();
+        }, 5000);
+      });
+    } else {
+      $.ajax({
+        type: 'POST',
+        url: '/tweets',
+        data: $('.new-tweet form textarea').serialize(),
+        success: renderNewTweet
+      });
+    }
+  });
 
 
 

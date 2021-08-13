@@ -1,7 +1,7 @@
 $(document).ready (function () {
 
   $(() => {
-    $("#tweet-text").on("input", onInput);
+    $(".new-tweet #tweet-text").on("input", onInput);
   })
 
   let CHAR_LIM = 140;
