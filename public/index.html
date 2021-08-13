@@ -60,11 +60,11 @@
   
 
     <!-- Page-specific (main) content here -->
-    <main class="container">
+    <!-- <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         <div class="form">
-          <form method="POST" action="/tweets/" id="new-tweet">
+          <form method="POST" action="/tweets" id="new-tweet">
             <textarea name="text" placeholder="What are you humming about?"></textarea>
             <input class = "submit" type="submit" value="Tweet">
             <span class="error"></span>
@@ -75,7 +75,7 @@
       <section id="tweets-container">
 
       </section>
-    </main>
+    </main> -->
 
            <!-- <h2 class = "compose-tweet">Compose Tweet</h2>
         <hr>
@@ -93,11 +93,11 @@
       <section class="new-tweet">
         <form action="/tweets/" method="POST">
           <label for="tweet-text">What are you humming about?</label><br>
+          <textarea name="text" id="tweet-text"></textarea>
           <div id='button-and-counter'>
             <button type="submit">Tweet</button>
               <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
-          <textarea name="text" id="tweet-text"></textarea>
 
         </form>
         

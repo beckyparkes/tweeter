@@ -1,8 +1,5 @@
 $(document).ready (function () {
 
-  // document.addEventListener('input',function(){
-  //     console.log("this");
-  // })
   $(() => {
     $("#tweet-text").on("input", onInput);
   })
