@@ -76,6 +76,13 @@ article:hover {
   float: left;
 }
 
+#article-body {
+  vertical-align: middle;
+  margin-top: 20%;
+  margin-left: 1em;
+  font-size: 30px;
+}
+
 #article-footer {
   /* display: flex;
   justify-content: space-between;

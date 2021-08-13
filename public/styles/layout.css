@@ -30,4 +30,5 @@ main {
   background-color: #f4f1ec;
   border-bottom: 3px #545149;
   justify-content: space-evenly;
+  align-items: center;
 }
