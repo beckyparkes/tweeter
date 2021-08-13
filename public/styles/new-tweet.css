@@ -67,7 +67,7 @@ article:hover {
 #article-header {
   display: flex;
   justify-content: flex-start;
-  
+  margin-top: 0px;
   flex-direction: row;
   background-color: #f4f1ec;
   border-bottom: 2px solid #545149;
