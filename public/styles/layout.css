@@ -36,8 +36,8 @@ main {
 }
 
 @media only screen and (max-width: 860px) {
-  main {
-    display: none;
+  body {
+    flex-direction: column;
   }
 }
 

@@ -3,7 +3,6 @@
   .new-tweet {
     margin-top: 100px;
   }
-  
 }
 
 /* textbox styling */
@@ -59,8 +58,6 @@ article {
   border: 2px solid #545149;
   flex-direction: column;
   height: 200px;
-  /* position: relative; */
-  width: 50%;
   margin-top: 25px;
 }
 
@@ -93,6 +90,10 @@ article:hover {
 }
 #article-header img {
   height: 25px;
+}
+
+#name {
+  font-size: 80%;
 }
 #handle {
   font-size: 10px;

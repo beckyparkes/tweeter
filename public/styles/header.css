@@ -20,6 +20,10 @@ h2 {
 @media only screen and (min-width: 860px) {
   header {
     margin-left: 5%;
-    margin-top: 20%;
+    margin-top: 170px;
+  }
+
+  body {
+    align-items: flex-start;
   }
 }

@@ -10,19 +10,19 @@ nav {
   top: 0;
   width: 100%;
   z-index: 1;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 
 span {
   font-size: 50px;
   text-align: left;
-  margin-left: 1.5em;
   font-family: 'Bungee', cursive;
 
 }
 
 .header {
   margin-left: auto;
-  margin-right: 1.5em;
 
 }
 
