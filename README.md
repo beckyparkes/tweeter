@@ -8,5 +8,5 @@ This repository is the starter code for the project: Students will fork and clon
 Changes occur before/after a width of 860px
 
 ## Responsive Design
-["Screenshot of demo page less than 860px"]()
-["Screenshot of demo page less than 860px"]()
+["Screenshot of fullscreen demo page (more than 860px)"](https://raw.githubusercontent.com/beckyparkes/tweeter/master/docs/fullscreen-screenshot.png)
+["Screenshot of minimized demo page (less than 860px)"](https://raw.githubusercontent.com/beckyparkes/tweeter/master/docs/minimized-screenshot.png)
