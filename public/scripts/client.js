@@ -127,7 +127,8 @@ $(document).ready(function() {
   }
 
 
-const createTweetElement = function(data) { 
+const createTweetElement = function(data) {
+  const timeAgo = timeago.format(data.created_at);
   const newTweet = 
   $(`<article class='container'>
 
@@ -137,7 +138,7 @@ const createTweetElement = function(data) {
     </header>
 
     <div id="article-body">${data.content.text}</div>
-    <footer id="article-footer" class="container">&nbsp ${data.created_at}
+    <footer id="article-footer" class="container">&nbsp ${timeAgo}
       <div id="footer-emotes">
       <i class="fas fa-flag"></i>&nbsp<i class="fas fa-retweet"></i>&nbsp<i class="fas fa-heart"></i>
       </div>
